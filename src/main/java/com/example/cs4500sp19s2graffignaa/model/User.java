@@ -8,7 +8,14 @@ public class User {
 	private String firstName;
 	private String lastName;
 	
- 	public String getFirstName() {
+ 	public User(int id, String username, String password, String firstName, String lastName) {
+ 		this.id = id;
+ 		this.username = username;
+ 		this.password = password;
+ 		this.firstName = firstName;
+ 		this.lastName = lastName;
+ 	}
+	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
